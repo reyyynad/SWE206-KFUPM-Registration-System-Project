@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swe_206_javafx.Controller_EditReservation">
+    <children>
+        <AnchorPane prefHeight="714.0" prefWidth="683.0">
+            <children>
+                <AnchorPane fx:id="editAnchorPane" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="245.0">
+               <children>
+                  <Line endX="100.0" layoutX="123.0" layoutY="173.0" startX="-100.0" stroke="WHITE" />
+                  <ImageView fitHeight="19.0" fitWidth="54.0" layoutX="69.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="59.0" layoutY="474.0" mnemonicParsing="false" onAction="#switch_to_modify_page" onDragDetected="#switch_to_modify_page" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: nocolor;" text="Back&#10;&#10;&#10;" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="144.0" fitWidth="165.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@kfupmicon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+                </AnchorPane>
+                <AnchorPane layoutX="243.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="531.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label fx:id="logInLabel" layoutX="175.0" layoutY="31.0" text="Edit Reservation" textFill="#00573e">
+                            <font>
+                                <Font name="Calibri Light" size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="userNameLabel" layoutX="66.0" layoutY="118.0" text="Location *:">
+                            <font>
+                                <Font name="Calibri Light" size="18.0" />
+                            </font>
+                        </Label>
+                  <Button fx:id="confirm_button" layoutX="237.0" layoutY="413.0" mnemonicParsing="false" onAction="#editReservation" prefHeight="41.0" prefWidth="111.0" text="Confirm" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Light Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="userNameLabel2" layoutX="93.0" layoutY="162.0" text="Date *:">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="locationsBox" layoutX="165.0" layoutY="116.0" prefHeight="25.0" prefWidth="197.0" style="-fx-border-color: grey;" />
+                  <DatePicker fx:id="datePicker" layoutX="165.0" layoutY="160.0" prefHeight="27.0" prefWidth="197.0" style="-fx-border-color: grey;" />
+                  <Label fx:id="userNameLabel31" layoutX="75.0" layoutY="292.0" text="Reason *:">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="reasonField" layoutX="167.0" layoutY="292.0" prefHeight="82.0" prefWidth="260.0" />
+                  <Label fx:id="userNameLabel32" layoutX="31.0" layoutY="202.0" text="Starting Time *:">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userNameLabel32" layoutX="23.0" layoutY="249.0" text="Duration Time *:">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="startingTimeChoiceBox" layoutX="167.0" layoutY="201.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="durationChoiceBox" layoutX="167.0" layoutY="248.0" prefWidth="150.0" />
+                  <Text fx:id="messageLabel" layoutX="115.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="310.5">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
